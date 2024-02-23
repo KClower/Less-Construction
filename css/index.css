@@ -1,1 +1,231 @@
-/* Should be empty until you compile your LESS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.wrapper {
+  padding: 30px 40px;
+}
+h2 {
+  font-size: 2.2rem;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+.image-container img {
+  width: 100%;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+p {
+  font-size: 1.6rem;
+  font-family: "Roboto", Arial, sans-serif;
+}
+.menu-content {
+  background-color: #D8D8D8;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 40px;
+}
+.menu-content a {
+  color: black;
+  margin-left: 30px;
+  text-decoration: none;
+}
+.jumbotron {
+  position: relative;
+  display: grid;
+}
+.jumbotron p {
+  color: white;
+  font-size: 6.2rem;
+  font-weight: 700;
+  position: absolute;
+  bottom: 50px;
+  left: 40px;
+}
+.flex div {
+  width: 48%;
+}
+.flex div:nth-of-type(1) {
+  padding-top: 50px;
+}
+.flex p {
+  max-width: 425px;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+.flex button {
+  background-color: white;
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+.flex-reverse {
+  margin: 60px 0;
+}
+.villa,
+.outskirts,
+.blocks {
+  position: relative;
+  display: grid;
+}
+.villa .badge,
+.outskirts .badge,
+.blocks .badge {
+  font-size: 1.9rem;
+  position: absolute;
+  text-align: center;
+  padding: 35px 68px;
+  font-weight: 500;
+  letter-spacing: 1rem;
+  background-color: #D8D8D8;
+  bottom: -40px;
+}
+.villa .badge-right,
+.outskirts .badge-right,
+.blocks .badge-right {
+  right: 2px;
+}
+.project-section .project-description {
+  margin-top: 90px;
+  margin-bottom: 100px;
+}
+.project-section .project-description p {
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+.project-section .project-description p:nth-of-type(1) {
+  margin-bottom: 25px;
+}
