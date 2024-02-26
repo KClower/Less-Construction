@@ -10,6 +10,10 @@ html {
 
 .wrapper {
     padding: 30px 40px;
+
+    @media screen and @mobile {
+        padding: 30px 20px;
+    }
 }
 
 h2 {
@@ -23,6 +27,9 @@ h3 {
     font-size: 1.8rem;
     font-family: @font-fam;
     padding: 50px 0 0px 0;
+    @media screen and @mobile {
+            padding-top: 10px;
+    }
 }
 
 .image-container {
@@ -32,12 +39,22 @@ h3 {
 }
 
 .flex {
+    // border: 1px solid black;
     display: flex;
     justify-content: space-between;
+
+    @media screen and @mobile {
+        flex-direction: column-reverse;
+       
+    }
 }
 
 .flex-reverse {
     flex-direction: row-reverse;
+
+    @media screen and @mobile {
+        flex-direction: column-reverse;
+    }
 }
 
 p {
