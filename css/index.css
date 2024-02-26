@@ -133,10 +133,26 @@ html {
 .wrapper {
   padding: 30px 40px;
 }
+@media screen and (max-width: 500px) {
+  .wrapper {
+    padding: 30px 20px;
+  }
+}
 h2 {
   font-size: 2.2rem;
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 700;
+}
+h3 {
+  color: white;
+  font-size: 1.8rem;
+  font-family: "Roboto", Arial, sans-serif;
+  padding: 50px 0 0px 0;
+}
+@media screen and (max-width: 500px) {
+  h3 {
+    padding-top: 10px;
+  }
 }
 .image-container img {
   width: 100%;
@@ -145,8 +161,18 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 500px) {
+  .flex {
+    flex-direction: column-reverse;
+  }
+}
 .flex-reverse {
   flex-direction: row-reverse;
+}
+@media screen and (max-width: 500px) {
+  .flex-reverse {
+    flex-direction: column-reverse;
+  }
 }
 p {
   font-size: 1.6rem;
@@ -158,10 +184,89 @@ p {
   justify-content: space-between;
   padding: 5px 40px;
 }
+@media screen and (max-width: 500px) {
+  .menu-content {
+    padding: 15px 10px;
+  }
+}
+.menu-content .logo {
+  color: white;
+  font-family: "Roboto", Arial, sans-serif;
+}
+@media screen and (max-width: 500px) {
+  .menu-content .logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+}
 .menu-content a {
-  color: black;
+  color: white;
   margin-left: 30px;
   text-decoration: none;
+  font-family: "Roboto", Arial, sans-serif;
+}
+@media screen and (max-width: 500px) {
+  .menu-content a {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background: #828282;
+}
+@media screen and (max-width: 500px) {
+  .footer {
+    display: block;
+    padding-left: 20px;
+  }
+}
+.footer a {
+  font-size: 1.6rem;
+  color: #828282;
+  text-decoration: none;
+  background-color: white;
+  padding: 10px 170px 10px 5px;
+  border-radius: 5px;
+}
+.footer p {
+  color: white;
+  font-size: 1.1rem;
+  padding: 5px 0 40px 0;
+  line-height: 2;
+}
+@media screen and (max-width: 500px) {
+  .footer p {
+    padding-bottom: 10px;
+  }
+}
+.interested {
+  padding-bottom: 18px;
+  line-height: 1.3;
+}
+.p-text {
+  margin-top: 5px;
+}
+@media screen and (max-width: 500px) {
+  .p-text {
+    margin-top: 10px;
+  }
+}
+.span {
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #828282;
+  padding-bottom: 8px;
+}
+@media screen and (max-width: 500px) {
+  .span {
+    padding-top: 30px;
+    text-align: left;
+    padding: 20px;
+  }
 }
 .jumbotron {
   position: relative;
@@ -175,30 +280,85 @@ p {
   bottom: 50px;
   left: 40px;
 }
+@media screen and (max-width: 500px) {
+  .jumbotron p {
+    font-size: 5.7rem;
+    line-height: 1.1;
+    bottom: 35px;
+    left: 20px;
+  }
+}
 .flex div {
   width: 48%;
 }
+@media screen and (max-width: 500px) {
+  .flex div {
+    width: 100%;
+  }
+}
 .flex div:nth-of-type(1) {
   padding-top: 50px;
+}
+@media screen and (max-width: 500px) {
+  .flex div:nth-of-type(1) {
+    width: 100%;
+    padding-top: 20px;
+  }
 }
 .flex p {
   max-width: 425px;
   line-height: 1.5;
   margin: 20px 0;
 }
+@media screen and (max-width: 500px) {
+  .flex p {
+    max-width: 100%;
+  }
+}
 .flex button {
   background-color: white;
   padding: 10px 20px;
   border: 1px solid black;
 }
+@media screen and (max-width: 500px) {
+  .flex button {
+    width: 100%;
+    padding: 15px 0;
+  }
+}
 .flex-reverse {
   margin: 60px 0;
+}
+@media screen and (max-width: 500px) {
+  .flex-reverse {
+    width: 100%;
+    margin: 40px 0;
+  }
 }
 .villa,
 .outskirts,
 .blocks {
   position: relative;
   display: grid;
+}
+@media screen and (max-width: 500px) {
+  .villa img,
+  .outskirts img,
+  .blocks img {
+    display: none;
+  }
+}
+.villa .mobile-img,
+.outskirts .mobile-img,
+.blocks .mobile-img {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .villa .mobile-img,
+  .outskirts .mobile-img,
+  .blocks .mobile-img {
+    display: inline;
+  }
 }
 .villa .badge,
 .outskirts .badge,
@@ -212,14 +372,41 @@ p {
   background-color: #D8D8D8;
   bottom: -40px;
 }
+@media screen and (max-width: 500px) {
+  .villa .badge,
+  .outskirts .badge,
+  .blocks .badge {
+    padding: 25px 25px;
+    bottom: -60px;
+    left: 25%;
+  }
+}
 .villa .badge-right,
 .outskirts .badge-right,
 .blocks .badge-right {
   right: 2px;
 }
+@media screen and (max-width: 500px) {
+  .villa .badge-right,
+  .outskirts .badge-right,
+  .blocks .badge-right {
+    left: 10%;
+    right: 10%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .project-section h2 {
+    padding-bottom: 20px;
+  }
+}
 .project-section .project-description {
   margin-top: 90px;
   margin-bottom: 100px;
+}
+@media screen and (max-width: 500px) {
+  .project-section .project-description {
+    margin: 60px 0;
+  }
 }
 .project-section .project-description p {
   max-width: 400px;

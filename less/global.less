@@ -1,41 +1,63 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-.wrapper{
+.wrapper {
     padding: 30px 40px;
+
+    @media screen and @mobile {
+        padding: 30px 20px;
+    }
 }
 
-h2{
+h2 {
     font-size: 2.2rem;
-    font-family: "Roboto";
+    font-family: @font-fam;
     font-weight: 700;
 }
-.image-container{
-    img{
+
+h3 {
+    color: white;
+    font-size: 1.8rem;
+    font-family: @font-fam;
+    padding: 50px 0 0px 0;
+    @media screen and @mobile {
+            padding-top: 10px;
+    }
+}
+
+.image-container {
+    img {
         width: 100%;
     }
 }
 
-.flex{
+.flex {
+    // border: 1px solid black;
     display: flex;
     justify-content: space-between;
+
+    @media screen and @mobile {
+        flex-direction: column-reverse;
+       
+    }
 }
-.flex-reverse{
+
+.flex-reverse {
     flex-direction: row-reverse;
+
+    @media screen and @mobile {
+        flex-direction: column-reverse;
+    }
 }
 
-p{
+p {
     font-size: 1.6rem;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: @font-fam;
 }
-
-
-
-

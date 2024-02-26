@@ -1,75 +1,149 @@
+.jumbotron {
+    position: relative;
+    display: grid;
 
-.jumbotron{
-position: relative;
-display: grid;
+    p {
+        color: white;
+        font-size: 6.2rem;
+        font-weight: 700;
+        position: absolute;
+        bottom: 50px;
+        left: 40px;
 
-p{
-    color: white;
-    font-size: 6.2rem;
-    font-weight: 700;
-    position: absolute;
-    bottom: 50px;
-    left: 40px;
-}
-}
-
-.flex{
-div{
-    width: 48%;
-    &:nth-of-type(1){
-        padding-top: 50px;
+        @media screen and @mobile {
+            font-size: 5.7rem;
+            line-height: 1.1;
+            bottom: 35px;
+            left: 20px;
+        }
     }
-   
 }
-    p{
+
+.flex {
+    div {
+        width: 48%;
+
+        @media screen and @mobile {
+            width: 100%;
+        }
+
+        &:nth-of-type(1) {
+            padding-top: 50px;
+
+            @media screen and @mobile {
+                width: 100%;
+                padding-top: 20px;
+            }
+        }
+
+
+    }
+
+    p {
         max-width: 425px;
         line-height: 1.5;
         margin: 20px 0;
+
+        @media screen and @mobile {
+            max-width: 100%;
+
+        }
     }
-    button{
+
+    button {
         background-color: white;
         padding: 10px 20px;
         border: 1px solid black;
+
+        @media screen and @mobile {
+            width: 100%;
+            padding: 15px 0;
+        }
+    }
+
+}
+
+.flex-reverse {
+    margin: 60px 0;
+
+    @media screen and @mobile {
+        width: 100%;
+        margin: 40px 0;
     }
 }
 
-.flex-reverse{
-    margin: 60px 0;
-}
 
 
-
-.villa, .outskirts, .blocks{
+.villa,
+.outskirts,
+.blocks {
     position: relative;
     display: grid;
-    .badge{
+
+    img {
+        @media screen and @mobile {
+            display: none;
+        }
+    }
+.mobile-img{
+    display: none;
+    @media screen and @mobile {
+        display: inline;
+    }
+}
+    .badge {
         font-size: 1.9rem;
         position: absolute;
         text-align: center;
         padding: 35px 68px;
-        font-weight:500;
+        font-weight: 500;
         letter-spacing: 1rem;
         background-color: @bg-grey;
         bottom: -40px;
-       
+
+        @media screen and @mobile {
+            padding: 25px 25px;
+            bottom: -60px;
+            left: 25%;
+        }
+
     }
-    .badge-right{
+
+    .badge-right {
         right: 2px;
+        @media screen and @mobile {
+        left: 10%;  
+        right: 10%;
+        }
     }
+
 }
 
 
 
-.project-section{
-    .project-description{
+.project-section {
+    h2 {
+        @media screen and @mobile {
+            padding-bottom: 20px;
+        }
+    }
+
+    .project-description {
+
         margin-top: 90px;
         margin-bottom: 100px;
-        p{
+
+        @media screen and @mobile {
+            margin: 60px 0;
+        }
+
+        p {
             max-width: 400px;
             margin: 0 auto;
             line-height: 1.5;
-            &:nth-of-type(1){
-margin-bottom: 25px;
+
+            &:nth-of-type(1) {
+                margin-bottom: 25px;
             }
         }
     }
